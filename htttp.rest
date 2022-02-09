@@ -1,0 +1,8 @@
+GET http://localhost:4000/log/searched-locations
+###
+POST http://localhost:4000/log/searched-locations/new
+Content-Type: application/json
+
+{
+    "keyword": "Moletai"
+}
