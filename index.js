@@ -2,6 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
+const cors = require('cors');
 const path = require('path');
 
 const app = express();
@@ -9,7 +10,7 @@ const app = express();
 const PORT = 4000;
 
 app.use(morgan('dev'));
-
+app.use(cors());
 app.use(express.json());
 
 app.get('/', (req, res) => {
