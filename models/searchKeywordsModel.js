@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 const searchKeywordsSchema = new Schema(
   {
-    searchedKeyword: {
+    keyword: {
       type: String,
       required: true,
     },

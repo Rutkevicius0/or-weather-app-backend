@@ -6,3 +6,5 @@ Content-Type: application/json
 {
     "searchedKeyword": "Kaunas"
 }
+###
+GET http://localhost:4000/log/current-weather
